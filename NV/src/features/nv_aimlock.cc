@@ -69,7 +69,7 @@ namespace nv { namespace features {
         float          fov;
 
         if (engine::IsInGame()) {
-            if (windows::GetKey(0x06) || windows::GetKey(0x01)) {
+            if (windows::GetKey(0x01) || windows::GetKey(0x01)) {
                 player = engine::GetClientEntity(engine::GetLocalPlayer());
                 if( player == 0 || player->IsValid() == false ) {
                     engine::SetSensitivity(engine::GetStartSensitivity());
